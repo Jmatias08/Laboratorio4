@@ -17,4 +17,9 @@ public class Articulo extends Contenido implements Publicable {
     public void visualizar() {
         System.out.println("Artículo: " + texto);
     }
+
+    @Override
+    public String toString() {
+        return "[Artículo] " + getResumen();
+    }
 }

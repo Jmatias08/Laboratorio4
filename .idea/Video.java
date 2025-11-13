@@ -17,6 +17,11 @@ public class Video extends Contenido implements Publicable {
 
     @Override
     public void visualizar() {
-        System.out.println("Reproduciendo video en: " + urlVideo);
+        System.out.println("Reproduciendo video: " + urlVideo);
+    }
+
+    @Override
+    public String toString() {
+        return "[Video] " + getResumen();
     }
 }

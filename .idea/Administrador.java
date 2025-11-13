@@ -5,20 +5,20 @@ public class Administrador extends Usuario implements Reportable {
 
     @Override
     public void crearContenido(Contenido c) {
-        System.out.println("Administrador creó contenido: " + c.getResumen());
+        System.out.println("Administrador creó: " + c.getResumen());
     }
 
     @Override
     public void editarContenido(Contenido c) {
-        System.out.println("Administrador editó contenido: " + c.getResumen());
+        System.out.println("Administrador editó: " + c.getResumen());
     }
 
     public void eliminarContenido(Contenido c) {
-        System.out.println("Administrador eliminó contenido: " + c.getResumen());
+        System.out.println("Administrador eliminó: " + c.getResumen());
     }
 
     @Override
     public String generarReporte() {
-        return "Reporte generado por administrador " + nombre;
+        return "Reporte generado por " + nombre;
     }
 }

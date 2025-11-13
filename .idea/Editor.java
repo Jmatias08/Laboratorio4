@@ -5,11 +5,11 @@ public class Editor extends Usuario {
 
     @Override
     public void crearContenido(Contenido c) {
-        System.out.println("Editor creó contenido: " + c.getResumen());
+        System.out.println("Editor creó: " + c.getResumen());
     }
 
     @Override
     public void editarContenido(Contenido c) {
-        System.out.println("Editor editó contenido: " + c.getResumen());
+        System.out.println("Editor editó: " + c.getResumen());
     }
 }

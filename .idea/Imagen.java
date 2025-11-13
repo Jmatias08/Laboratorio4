@@ -1,13 +1,13 @@
 import java.util.List;
 
 public class Imagen extends Contenido implements Publicable {
-    protected String resolucion;
     protected String formato;
+    protected String resolucion;
 
-    public Imagen(int id, String titulo, String autor, String categoria, List<String> etiquetas, String resolucion, String formato) {
+    public Imagen(int id, String titulo, String autor, String categoria, List<String> etiquetas, String formato, String resolucion) {
         super(id, titulo, autor, categoria, etiquetas);
-        this.resolucion = resolucion;
         this.formato = formato;
+        this.resolucion = resolucion;
     }
 
     @Override
@@ -17,6 +17,11 @@ public class Imagen extends Contenido implements Publicable {
 
     @Override
     public void visualizar() {
-        System.out.println("Mostrando imagen en formato " + formato + " (" + resolucion + ")");
+        System.out.println("Mostrando imagen (" + formato + ", " + resolucion + ")");
+    }
+
+    @Override
+    public String toString() {
+        return "[Imagen] " + getResumen();
     }
 }

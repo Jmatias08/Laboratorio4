@@ -28,6 +28,10 @@ public abstract class Contenido {
     }
 
     public String getResumen() {
-        return titulo + " (" + categoria + ") - " + autor;
+        return titulo + " - " + autor + " (" + categoria + ")";
     }
+
+    public String getTitulo() { return titulo; }
+    public String getAutor() { return autor; }
+    public String getCategoria() { return categoria; }
 }
