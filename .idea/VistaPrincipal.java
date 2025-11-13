@@ -13,6 +13,8 @@ public class VistaPrincipal extends JFrame {
     private Administrador admin = new Administrador("Luis", "admin@cms.com");
     private Editor editor = new Editor("María", "editor@cms.com");
 
+
+    // Ventana con la vista 
     public VistaPrincipal(ControladorContenido controlador, Usuario usuarioInicial) {
         this.controlador = controlador;
         this.usuario = usuarioInicial;
